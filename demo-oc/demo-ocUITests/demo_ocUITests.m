@@ -35,6 +35,15 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationFaceUp;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationFaceUp;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:1].staticTexts[@"hehe"] tap];
+    [[[[app.navigationBars[@"UIView"] childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Back"] elementBoundByIndex:0] tap];
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationFaceUp;
+    
 }
 
 @end

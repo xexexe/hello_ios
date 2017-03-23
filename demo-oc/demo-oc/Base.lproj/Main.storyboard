@@ -35,10 +35,32 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="26f-fk-D2R"/>
+                    <connections>
+                        <segue destination="hdX-KK-mru" kind="push" identifier="next" id="EED-8d-A7m"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmA-hV-Api" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="902" y="604"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pnV-Gr-J53">
+            <objects>
+                <viewController id="hdX-KK-mru" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uyY-b6-UmI"/>
+                        <viewControllerLayoutGuide type="bottom" id="cSj-IS-elX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykv-gU-1PP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ebs-ak-lYG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lF-nB-49F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="603"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8uX-JT-JSq">

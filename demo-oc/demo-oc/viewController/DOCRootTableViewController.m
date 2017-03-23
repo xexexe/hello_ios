@@ -66,6 +66,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Table view did selected: %@",indexPath);
+    [self performSegueWithIdentifier:@"next" sender:nil];
 }
 
 /*
